@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Keeboo App</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keeboo App LLC</title>
+
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --accent: #111827;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    header {
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    p {
+      font-size: 0.98rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Keeboo App LLC</h1>
-  <p>Keeboo is a social networking mobile application focused on user-generated food content and recipe discovery.</p>
-  <p>© 2026 Keeboo App LLC</p>
+  <div class="container">
+    <header>
+      <h1>Keeboo App LLC</h1>
+      <div class="subtitle">A limited liability company</div>
+    </header>
+
+    <section>
+      <h2>Company Overview</h2>
+      <p>
+        Keeboo App LLC develops and operates Keeboo, a mobile application focused on sharing food content and practical home cooking recipes. The application provides a streamlined format for posting ingredients, preparation steps, and related media in a structured and accessible way.
+      </p>
+      <p>
+        Keeboo is designed to prioritize clarity, usability, and everyday cooking over professionally produced or influencer-driven content.
+      </p>
+    </section>
+
+    <footer>
+      © 2026 Keeboo App LLC. Keeboo is a mobile application developed and operated by the company.
+    </footer>
+  </div>
 </body>
 </html>
