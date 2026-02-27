@@ -37,12 +37,10 @@
       padding: 3rem;
       border-radius: 14px;
       box-shadow: 0 14px 32px rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
       border: 1px solid var(--border);
+      position: relative;
     }
 
-    /* Stronger red accent bar */
     .container::before {
       content: "";
       position: absolute;
@@ -92,6 +90,46 @@
       color: #1f2937;
     }
 
+    /* Beta Preview Card */
+    .beta-card {
+      margin-top: 1.25rem;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+
+    .beta-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .beta-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+
+    .beta-description {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .beta-link {
+      font-size: 0.9rem;
+      color: var(--red);
+      word-break: break-all;
+    }
+
+    .beta-link a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
     footer {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
@@ -125,6 +163,22 @@
       <p>
         Keeboo App LLC develops and operates Keeboo, a mobile application focused on sharing everyday meals and food experiences. Users post photos of what they ate, along with contextual details such as who they were with and optional recipe information. The application also includes a dedicated recipe tab where users can browse for inspiration and access clear, practical cooking instructions. Keeboo prioritizes simple, authentic sharing of real meals and real moments over professionally produced or influencer-driven content.
       </p>
+    </section>
+
+    <section>
+      <h2>External Beta</h2>
+      <div class="beta-card">
+        <div class="beta-label">Apple TestFlight</div>
+        <div class="beta-title">Keeboo External Beta</div>
+        <div class="beta-description">
+          Keeboo is currently available in external testing. Individuals may request access through Apple TestFlight.
+        </div>
+        <div class="beta-link">
+          <a href="https://testflight.apple.com/join/nfUVwbaP" target="_blank">
+            https://testflight.apple.com/join/nfUVwbaP
+          </a>
+        </div>
+      </div>
     </section>
 
     <footer>
