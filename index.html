@@ -11,6 +11,8 @@
       --text: #111827;
       --muted: #6b7280;
       --border: #e5e7eb;
+      --red: #dc2626;
+      --red-soft: #fee2e2;
     }
 
     * {
@@ -22,19 +24,32 @@
     }
 
     body {
-      background: var(--bg);
+      background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);
       color: var(--text);
       line-height: 1.65;
       padding: 3rem 1.5rem;
     }
 
     .container {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
       background: #ffffff;
       padding: 3rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle red accent bar */
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background: linear-gradient(to right, var(--red), #b91c1c);
     }
 
     header {
@@ -48,6 +63,11 @@
       font-weight: 600;
       letter-spacing: -0.5px;
       margin-bottom: 0.4rem;
+      transition: color 0.2s ease;
+    }
+
+    h1:hover {
+      color: var(--red);
     }
 
     .subtitle {
@@ -63,11 +83,55 @@
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Animated underline */
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      height: 2px;
+      width: 0%;
+      background: var(--red);
+      transition: width 0.3s ease;
+    }
+
+    h2:hover::after {
+      width: 100%;
     }
 
     p {
       font-size: 0.98rem;
       color: #1f2937;
+    }
+
+    /* Subtle highlight on hover */
+    section:hover {
+      background: var(--red-soft);
+      padding: 1rem;
+      border-radius: 10px;
+      transition: background 0.2s ease, padding 0.2s ease;
+    }
+
+    .cta {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(220, 38, 38, 0.3);
     }
 
     footer {
@@ -103,6 +167,8 @@
       <p>
         Keeboo App LLC develops and operates Keeboo, a mobile application focused on sharing everyday meals and food experiences. Users post photos of what they ate, along with contextual details such as who they were with and optional recipe information. The application also includes a dedicated recipe tab where users can browse for inspiration and access clear, practical cooking instructions. Keeboo prioritizes simple, authentic sharing of real meals and real moments over professionally produced or influencer-driven content.
       </p>
+
+      <a href="mailto:contact@keebooapp.com" class="cta">Contact Us</a>
     </section>
 
     <footer>
