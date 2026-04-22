@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Keeboo</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --red: #c81e1e;
+      --red-soft: #fef2f2;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 14px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8px;
+      width: 100%;
+      background: var(--red);
+      border-radius: 14px 14px 0 0;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.88rem;
+      color: var(--red);
+      text-decoration: none;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .back-link::before {
+      content: "←";
+    }
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--red-soft);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.4rem;
+      color: var(--red);
+    }
+    .policy-meta {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .policy-section {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .policy-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--red);
+      margin-bottom: 0.6rem;
+    }
+    .policy-section p {
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .policy-section ul {
+      margin-top: 0.5rem;
+      padding-left: 1.4rem;
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .policy-section ul li {
+      margin-bottom: 0.35rem;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer a {
+      color: var(--red);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 2rem; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">Keeboo App LLC</a>
+
+    <header>
+      <h1>Privacy Policy</h1>
+      <div class="policy-meta">Last updated: April 21, 2026</div>
+    </header>
+
+    <div class="policy-section">
+      <h2>1. Who we are</h2>
+      <p>[Insert legal name of the entity operating the app] ("we," "us," or "our") operates Keeboo (the "App").<br>Contact: [Insert contact email and, if applicable, postal address]</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>2. Scope</h2>
+      <p>This policy describes how we collect, use, and share information when you use the App. It applies to information processed through the App and our backend services.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>3. Information you provide</h2>
+      <ul>
+        <li><strong>Account and profile:</strong> When you sign up or use the App, we process information you submit, including your phone number (used as your account identifier), name, profile photo, bio, and account privacy settings (e.g., private profile).</li>
+        <li><strong>Content you create:</strong> Posts (e.g., meals and recipes), titles, captions, photos and videos, recipe details (e.g., ingredients, steps, diet tags, timing), ratings, and related engagement.</li>
+        <li><strong>Location you associate with content:</strong> Location labels and related fields used for discovery and maps, which may include approximate or city-level location and, where you choose or the feature requires it, coordinates derived from device location or geocoding.</li>
+        <li><strong>Social graph:</strong> Follows, follow requests, blocks, tags and mentions of other users, comments and replies, direct and group messages, and saved/bookmarked content.</li>
+        <li><strong>Contacts (optional):</strong> If you use "find friends" or similar features, the App may access your device contacts (typically phone numbers) on your device to help identify which contacts may already use Keeboo. [Clarify with counsel whether any contact data is uploaded in bulk or only used locally.]</li>
+        <li><strong>Reports:</strong> If you report content or users, we process the information you provide in the report.</li>
+        <li><strong>Support:</strong> Information you send when you contact us.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>4. Information collected automatically</h2>
+      <ul>
+        <li><strong>Authentication and security:</strong> Phone verification via SMS or equivalent carrier methods through Firebase Authentication.</li>
+        <li><strong>Device tokens for notifications:</strong> A Firebase Cloud Messaging (FCM) token may be stored with your account so we can deliver push notifications (e.g., activity on your posts, follows, messages).</li>
+        <li><strong>Usage and product analytics:</strong> We use Google Analytics for Firebase to understand how the App is used. We log custom events such as onboarding steps, permission prompts, main navigation, content actions, post-creation steps, map interactions, and profile/social lists.</li>
+        <li><strong>Diagnostics:</strong> We use Firebase Crashlytics to receive crash logs and error reports to improve stability.</li>
+        <li><strong>Technical logs:</strong> Our servers and service providers may create server logs when you use the App for security, abuse prevention, and reliability purposes.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>5. Information from third parties and integrated services</h2>
+      <ul>
+        <li><strong>Google Maps:</strong> Map features may involve Google processing location and usage data under Google's terms and policies.</li>
+        <li><strong>Geocoding / platform location services:</strong> Reverse geocoding or map-related processing may rely on Apple, Google, or other platform or mapping providers, depending on the device and configuration.</li>
+        <li><strong>Firebase / Google Cloud:</strong> We use Firebase and related Google Cloud services to host data and run backend logic. Google processes certain information as a service provider according to the agreements applicable to our Firebase project.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>6. How we use information</h2>
+      <p>We use the information above to:</p>
+      <ul>
+        <li>Provide, operate, and improve the App (accounts, feeds, maps, messaging, notifications).</li>
+        <li>Personalize discovery and recommendations (including optional contact-based suggestions).</li>
+        <li>Maintain safety and integrity (e.g., blocks, reports, abuse prevention).</li>
+        <li>Send transactional and push notifications (subject to your device settings and, where required, your consent).</li>
+        <li>Analyze aggregated or de-identified usage trends and funnels via analytics.</li>
+        <li>Debug and improve reliability with Crashlytics and logging.</li>
+        <li>Comply with law and enforce our terms.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>7. How we share information</h2>
+      <p>We do not sell your personal information. We share information only as needed:</p>
+      <ul>
+        <li><strong>Service providers:</strong> With Google (Firebase / Google Cloud / Analytics / Crashlytics / FCM / Maps-related services) and other vendors that process data on our behalf under contract.</li>
+        <li><strong>Other users:</strong> Content and profile elements you make public or share in the App (e.g., posts, profile fields visible to others, comments, messages to recipients).</li>
+        <li><strong>Legal and safety:</strong> When required by law, legal process, or to protect rights, safety, and security.</li>
+        <li><strong>Business transfers:</strong> In connection with a merger, acquisition, or asset sale, subject to appropriate safeguards.</li>
+      </ul>
+    </div>
+
+    <div class="policy-section">
+      <h2>8. Storage and security</h2>
+      <p>Information is stored using Firebase services, including Cloud Firestore (structured data such as user profiles, posts, comments, conversations, notifications metadata, and related records), Cloud Storage (photos and videos), and Cloud Functions (server-side operations such as syncing auth claims, sending notifications, and normalizing location fields on posts). We use reasonable technical and organizational measures, but no method of transmission or storage is completely secure.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>9. Retention</h2>
+      <p>We retain information as long as your account is active and as needed to provide the App, comply with law, resolve disputes, and enforce agreements. [Insert whether you offer in-app account deletion and typical deletion timeline.] Some copies may persist in backups for a limited period.</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>10. Your choices and rights</h2>
+      <p>Depending on where you live, you may have rights to access, correct, delete, export, or restrict certain processing, and to object or withdraw consent where processing is consent-based. You can also control push notifications and location and contacts permissions in your device settings. To exercise rights, contact us at [insert email].</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>11. Children</h2>
+      <p>The App is not directed at children under 13 (or the minimum age required in your jurisdiction). We do not knowingly collect personal information from children. [Adjust age if your target market differs.]</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>12. International users</h2>
+      <p>If you use the App from outside [insert country], your information may be processed in [insert countries, e.g., United States] where our service providers operate. We rely on appropriate safeguards where required (e.g., standard contractual clauses).</p>
+    </div>
+
+    <div class="policy-section">
+      <h2>13. Changes</h2>
+      <p>We may update this policy from time to time. We will post the updated version with a new "Last updated" date and, where appropriate, notify you in the App.</p>
+    </div>
+
+    <footer>
+      <p>© 2026 Keeboo App LLC. Keeboo is a mobile application developed and operated by the company.</p>
+      <p style="margin-top: 0.5rem;">Need help? Contact us at <a href="mailto:support@keebooapp.com">support@keebooapp.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
