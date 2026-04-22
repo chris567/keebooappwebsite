@@ -90,45 +90,6 @@
       color: #1f2937;
     }
 
-    .beta-card {
-      margin-top: 1rem;
-      background: #ffffff;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.25rem;
-    }
-
-    .beta-label {
-      font-size: 0.75rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .beta-title {
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-      color: var(--text);
-    }
-
-    .beta-description {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-    }
-
-    .beta-link {
-      font-size: 0.9rem;
-      color: var(--red);
-      word-break: break-all;
-    }
-
-    .beta-link a {
-      color: var(--red);
-      text-decoration: none;
-    }
-
     footer {
       margin-top: 2.5rem;
       padding-top: 1.5rem;
@@ -136,6 +97,15 @@
       font-size: 0.85rem;
       color: var(--muted);
       text-align: center;
+    }
+
+    footer a {
+      color: var(--red);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 640px) {
@@ -164,24 +134,9 @@
       </p>
     </section>
 
-    <section>
-      <h2>External Beta</h2>
-      <div class="beta-card">
-        <div class="beta-label">Apple TestFlight</div>
-        <div class="beta-title">Keeboo External Beta</div>
-        <div class="beta-description">
-          Keeboo is currently available through Apple TestFlight as part of an external beta. Access the iOS beta using the link below.
-        </div>
-        <div class="beta-link">
-          <a href="https://testflight.apple.com/join/nfUVwbaP" target="_blank">
-            https://testflight.apple.com/join/nfUVwbaP
-          </a>
-        </div>
-      </div>
-    </section>
-
     <footer>
-      © 2026 Keeboo App LLC. Keeboo is a mobile application developed and operated by the company.
+      <p>© 2026 Keeboo App LLC. Keeboo is a mobile application developed and operated by the company.</p>
+      <p style="margin-top: 0.5rem;">Need help? Contact us at <a href="mailto:support@keebooapp.com">support@keebooapp.com</a></p>
     </footer>
   </div>
 </body>
