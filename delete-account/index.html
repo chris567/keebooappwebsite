@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <title>Account Deletion – Keeboo</title>
+  <style>
+    :root {
+      --bg: #f9fafb;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --red: #c81e1e;
+      --red-soft: #fef2f2;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom, #ffffff 0%, #f9fafb 100%);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 3rem 1.5rem;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 3rem;
+      border-radius: 14px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+      position: relative;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 8px;
+      width: 100%;
+      background: var(--red);
+      border-radius: 14px 14px 0 0;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.88rem;
+      color: var(--red);
+      text-decoration: none;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .back-link::before {
+      content: "←";
+    }
+    header {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 2px solid var(--red-soft);
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.4rem;
+      color: var(--red);
+    }
+    .policy-section {
+      margin-bottom: 1.75rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .policy-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .policy-section p {
+      font-size: 0.95rem;
+      color: #374151;
+      line-height: 1.7;
+    }
+    .policy-section p + p {
+      margin-top: 0.85rem;
+    }
+    .policy-section a {
+      color: var(--red);
+      text-decoration: none;
+    }
+    .policy-section a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    footer a {
+      color: var(--red);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .container { padding: 2rem; }
+      h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">Keeboo App LLC</a>
+
+    <header>
+      <h1>Keeboo Account Deletion</h1>
+    </header>
+
+    <div class="policy-section">
+      <p>Keeboo users can delete their account directly in the app by going to Account Settings and selecting Delete Account.</p>
+      <p>If you no longer have access to the app or would like to request account deletion outside the app, email <a href="mailto:support@keebooapp.com">support@keebooapp.com</a> with the phone number associated with your Keeboo account.</p>
+      <p>When your account is deleted, Keeboo deletes or anonymizes account information, profile information, posts, comments, saved content, follow relationships, notifications, and other app data associated with your account.</p>
+      <p>Some limited data may be retained if required for security, fraud prevention, legal compliance, dispute resolution, or business recordkeeping. Account deletion requests submitted by email are typically processed after we verify that the request is associated with the correct account.</p>
+    </div>
+
+    <footer>
+      <p>© 2026 Keeboo App LLC. Keeboo is a mobile application developed and operated by the company.</p>
+      <p style="margin-top: 0.5rem;">Need help? Contact us at <a href="mailto:support@keebooapp.com">support@keebooapp.com</a></p>
+    </footer>
+  </div>
+</body>
+</html>
